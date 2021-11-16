@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------Estilo LOGO*/
+.logo{
+    width: 10rem;
+    height: 10rem;
+}
+/*------- Estilo Carrusel*/
+.contenedorCarrusel{
+    display: flex;
+    flex-direction: row;
+#carouselExampleCaptions{
+    width: 40rem;
+    height: 40rem;
+    margin: 5rem;
+
+    .boton{
+        color: black;
+        background-color: black;
+    }
+}
+.empresa{
+    .tituloAbogados{
+        padding-bottom: 2rem;
+    }
+    width: 40rem;
+    height: 40rem;
+    padding: 5rem;
+    padding-top: 10rem;
+}
+
+}
+
+
+
+/******* ESTILOS FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top, rgb(19, 87, 87), white);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: stretch;
+    padding-top: 2rem;
+    height: 18rem;
+}
+    .cajaContacto{
+        padding-left: 2rem;
+        padding-top: 3rem;
+    }
+    .cajaSede{
+        padding-top: 2.3rem;
+    }
+    .cajaMapa{
+        padding-top: 2rem;
+        padding-right: 3rem;
+    }
+
+
+.contacto, .sede{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+
+}
+.linkedin{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+
+}
+.linkedin:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.instagram{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.instagram:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.facebook{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.facebook:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.twitter{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.twitter:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+
+
+
+/*--------------------------OTRO FOOTER*/

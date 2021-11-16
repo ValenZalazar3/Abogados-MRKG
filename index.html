@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera Entrega</title>
+    <!------ESTILO CCS BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-----HOJA DE ESTILO CSS-->
+    <link rel="stylesheet" href="estilo.css">
+
+
+
+</head>
+
+<body>
+
+    <!---------------HEADER-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/areasdepractica.html">Áreas de práctica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/socios.html">Socios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobre nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./html/capacitaciones.html">Capacitaciones</a></li>
+                            <li><a class="dropdown-item" href="./html/empresa.html">Empresas</a></li>
+                            <li><a class="dropdown-item" href="./html/contacto.html">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </nav>
+
+    <!------------------------------COMIENZO DEL CAROUSEL-->
+    <div class="contenedorCarrusel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active boton" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2" class="boton"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3" class="boton"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/primeraslide.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/segundaslide.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/terceraslide.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empresa">
+            <h1 class="tituloAbogados"><strong> Abogados de empresas</strong></h1>
+            <p class="parrafoAbogados"> MRKG es un concepto innovador en el mundo de la asesoría corporativa, donde el
+                Estudio se posiciona en
+                el mercado como la firma legal multidisciplinaria que integra todas las necesidades de la empresa en un
+                único servicio de asesoría.
+            <p class="parrafoAbogados">Somos un equipo consolidado de <strong>jóvenes profesionales</strong>, con un
+                dedicado trabajo respaldado por
+                laprofesionalidad, con el compromiso puesto en brindar soluciones creativas, priorizando la calidad de
+                nuestros servicios, y la observación permanente del grado y nivel de satisfacción del cliente.</p>
+            <p class="parrafoAbogados">Nuestra firma se renueva teniendo como foco las periódicas exigencias que se le
+                presentan a nuestros
+                clientes, prestando un servicio que excede lo meramente legal, para a su vez ofrecer asistencia en
+                múltiples materias como la contable, financiera y de marketing, entre otras.</p>
+            <p class="parrafoAbogados">Así, con la constitución de nuestros diversos departamentos, MRKG se constituye
+                como el complemento
+                profesional ideal para la empresa de hoy.</p>
+        </div>
+    </div>
+    <!---------------------------COMIENZO DE LA CAJA "NUESTRA OFICINA...."-->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./img/edificios.jpg" class="d-block mx-lg-auto img-fluid" alt="edificios" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">En Nuestras oficinas...</h1>
+                <p class="lead">Contamos con un equipo multi e interdisciplinario, lo que implica que el Estudio
+                    Jurídico MRKG está altamente capacitado para el asesoramiento empresario integral. Ayudamos a
+                    nuestros clientes a gestionar la universalidad de los aspectos, ya sea legales, financieros,
+                    contables, como de administración empresarial, entre otros, los que se hacen presentes en la
+                    procecución y desarrollo de la actividad corporativa. La empresa necesita un diagnóstico que permita
+                    la optimización de resultados, la prevención de contingencias, y la proyección de rendimientos.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><a href="./html/contacto.html"
+                            class="link-dark">Contactanos</a></button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a href="./html/empresa.html"
+                            class="link-dark">Quiero
+                            saber más</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------COMIENZO DEL FOOTER-->
+    <footer class="footer">
+        <div class="cajaContacto">
+            <ul class="contacto">
+                <li> Contacto</li>
+                <li> Tel: +54 15 7777-8888</li>
+                <li> E-Mail: consultas@estudiomrkg.com</li>
+                <img src="./img/LinkedIn.jpg" alt="linkdin" class="linkedin">
+                <img src="./img/instagram.png" alt="instagrac" class="instagram">
+                <img src="./img/facebook.png" alt="facebook" class="facebook">
+                <img src="./img/Twitter.jpg" alt="twitter" class="twitter">
+            </ul>
+        </div>
+        <div class="cajaSede">
+            <ul class="sede">
+                <li> Sede Central</li>
+                <li> Cordoba 2021 Capital Federal</li>
+                <li> República Argentina</li>
+            </ul>
+        </div>
+        <div class="cajaMapa"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1867509866593!2d-58.39836168491974!3d-34.599438880460596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca950b91c9a7%3A0x5fc7ec3351bc70fe!2sAv.%20C%C3%B3rdoba%202021%2C%20C1120AAC%20CABA!5e0!3m2!1ses!2sar!4v1635726339881!5m2!1ses!2sar"
+                allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+    </footer>
+
+
+    <!--------------------------------LINK JAVASCRIPT DE BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        
+</body>
+
+</html>
