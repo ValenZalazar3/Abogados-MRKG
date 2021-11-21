@@ -81,7 +81,7 @@
   padding-right: 3rem;
 }
 
-.contacto, .sede {
+.contactoInicio, .sede {
   list-style: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
@@ -166,5 +166,12 @@
   border-radius: 2rem;
   -webkit-transform: scale(1.8);
           transform: scale(1.8);
+}
+
+/*--------------------------ESTILOS AREAS DE PRACTICA*/
+.capractica {
+  width: 70rem;
+  padding-left: 5rem;
+  padding-top: 5rem;
 }
 /*# sourceMappingURL=estilo.css.map */
