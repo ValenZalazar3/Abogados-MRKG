@@ -137,10 +137,31 @@
 
 
 /*--------------------------ESTILOS AREAS DE PRACTICA*/
-
-.capractica{
-    width: 70rem;
-    padding-left: 5rem;
+.areasPractica{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .capractica-right, .capractica-left{
     padding-top: 5rem;
+    padding-left: 5rem;
+    text-align: justify;
+    width: 60rem;
+    box-shadow: 10px 5px 5px rgb(152, 163, 163);
+    .titapractica{
+        color: rgb(4, 89, 95);
+        font-size: 1.5rem;
+    }
+}
+.imgareas{
+    padding-right: 2rem;
+    padding-top: 5rem;
+}
+}
+.tituloAP{
+    padding: 3rem;
+    color: rgb(26, 109, 124);
+    text-decoration: underline;
     
 }
+
+

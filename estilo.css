@@ -169,9 +169,41 @@
 }
 
 /*--------------------------ESTILOS AREAS DE PRACTICA*/
-.capractica {
-  width: 70rem;
-  padding-left: 5rem;
+.areasPractica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.areasPractica .capractica-right, .areasPractica .capractica-left {
   padding-top: 5rem;
+  padding-left: 5rem;
+  text-align: justify;
+  width: 60rem;
+  -webkit-box-shadow: 10px 5px 5px #98a3a3;
+          box-shadow: 10px 5px 5px #98a3a3;
+}
+
+.areasPractica .capractica-right .titapractica, .areasPractica .capractica-left .titapractica {
+  color: #04595f;
+  font-size: 1.5rem;
+}
+
+.areasPractica .imgareas {
+  padding-right: 2rem;
+  padding-top: 5rem;
+}
+
+.tituloAP {
+  padding: 3rem;
+  color: #1a6d7c;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=estilo.css.map */
