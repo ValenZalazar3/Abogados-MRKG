@@ -1,0 +1,14 @@
+/*--------------------------ESTILOS PAGINA CONTACTO*/
+
+.contacto{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+}
+.contacto:hover{
+    border-radius: 2rem;
+    transform: scale(1.8);
+}
