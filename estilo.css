@@ -356,8 +356,8 @@
   padding: 5rem;
 }
 
-.sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM {
-  background-position: center down;
+.sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM, .sociosFundadores .noVisible {
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 15rem;
