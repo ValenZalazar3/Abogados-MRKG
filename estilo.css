@@ -42,6 +42,60 @@
   padding-bottom: 2rem;
 }
 
+.contenedorCarrusel .parrafoAbogados {
+  text-align: justify;
+}
+
+.lead {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .contenedorCarrusel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorCarrusel #carouselExampleCaptions {
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem;
+  }
+  .contenedorCarrusel .empresa {
+    width: 25rem;
+    height: 45rem;
+    padding: 2rem;
+    padding-top: 2rem;
+  }
+  .contenedorCarrusel .empresa .tituloAbogados {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contenedorCarrusel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorCarrusel #carouselExampleCaptions {
+    width: 40rem;
+    height: 40rem;
+    margin: 5rem;
+  }
+  .contenedorCarrusel .empresa {
+    width: 40rem;
+    height: 35rem;
+    padding: 3rem;
+    padding-top: 3rem;
+  }
+  .contenedorCarrusel .empresa .tituloAbogados {
+    padding-bottom: 2rem;
+  }
+}
+
 /******* ESTILOS FOOTER*/
 .footer {
   display: -webkit-box;
@@ -64,21 +118,10 @@
       -ms-flex-align: stretch;
           align-items: stretch;
   padding-top: 2rem;
-  height: 18rem;
 }
 
-.cajaContacto {
-  padding-left: 2rem;
-  padding-top: 3rem;
-}
-
-.cajaSede {
-  padding-top: 2.3rem;
-}
-
-.cajaMapa {
-  padding-top: 2rem;
-  padding-right: 3rem;
+.cajaContacto, .cajaSede, .cajaMapa {
+  padding: 2rem;
 }
 
 .contactoInicio, .sede {
@@ -151,6 +194,15 @@
           transform: scale(1.3);
 }
 
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 /*--------------------------ESTILOS PAGINA CONTACTO*/
 .contacto {
   height: 5rem;
@@ -191,11 +243,6 @@
           box-shadow: 10px 5px 5px #98a3a3;
 }
 
-.areasPractica .capractica-right .titapractica, .areasPractica .capractica-left .titapractica {
-  color: #04595f;
-  font-size: 1.5rem;
-}
-
 .areasPractica .imgareas {
   padding-right: 2rem;
   padding-top: 5rem;
@@ -205,5 +252,92 @@
   padding: 3rem;
   color: #1a6d7c;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .areasPractica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .areasPractica .capractica-right, .areasPractica .capractica-left {
+    padding: 0px;
+    width: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .areasPractica .imgareas {
+    padding: 0px;
+  }
+}
+
+.tituloAP {
+  padding: 3rem;
+  color: #1a6d7c;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .areasPractica {
+    padding: 2rem;
+  }
+  .areasPractica .capractica-right, .areasPractica .capractica-left {
+    padding: 0rem;
+    padding-top: 3rem;
+    width: 30rem;
+  }
+  .areasPractica .imgareas {
+    padding: 0px;
+  }
+}
+
+/*---------------------ESTILO SOCIOS----*/
+.sociosFundadores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem;
+}
+
+.sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM {
+  background-position: center down;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 20rem;
+}
+
+.sociosFundadores .imgSocioRK {
+  background-image: url(./img/nicolas.jpeg);
+}
+
+.sociosFundadores .imgSocioM {
+  background-image: url(./img/franco.jpeg);
+}
+
+.sociosFundadores .imgSocioG {
+  background-image: url(./img/maximo.jpeg);
+}
+
+@media (max-width: 768px) {
+  .sociosFundadores {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
