@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 415px) {
   .contenedorCarrusel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
