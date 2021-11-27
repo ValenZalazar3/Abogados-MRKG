@@ -38,6 +38,7 @@
 .lead{
     text-align: justify;
 }
+
 @media (max-width: 768px){
     .contenedorCarrusel{
         flex-direction: column;
@@ -76,6 +77,27 @@
         padding-top: 3rem;
     }
     }
+}
+@media(max-width: 360px)
+{
+    .contenedorCarrusel
+    {
+        flex-direction: column;
+    #carouselExampleCaptions{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .empresa{
+        .tituloAbogados{
+            padding-bottom: 2rem;
+        }
+        width: fit-content;
+        height: fit-content;
+        padding: 1rem;
+        padding-top: 1rem;
+    }
+}
 }
 
 
@@ -234,6 +256,22 @@
         padding:0px;
     }
     }
+}
+@media(max-width: 360px){
+    .areasPractica{
+        padding: 1rem;
+        .capractica-right, .capractica-left{
+        padding: 0rem;
+        padding-top: 3rem;
+        width: 20rem;
+
+        
+    }
+    .imgareas{
+        padding:1rem;
+        width: 20rem;
+    }
+    } 
 }
 
 /*---------------------ESTILO SOCIOS----*/

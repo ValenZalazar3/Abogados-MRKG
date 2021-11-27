@@ -96,6 +96,36 @@
   }
 }
 
+@media (max-width: 360px) {
+  .contenedorCarrusel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorCarrusel #carouselExampleCaptions {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .contenedorCarrusel .empresa {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1rem;
+    padding-top: 1rem;
+  }
+  .contenedorCarrusel .empresa .tituloAbogados {
+    padding-bottom: 2rem;
+  }
+}
+
 /******* ESTILOS FOOTER*/
 .footer {
   display: -webkit-box;
@@ -293,6 +323,21 @@
   }
   .areasPractica .imgareas {
     padding: 0px;
+  }
+}
+
+@media (max-width: 360px) {
+  .areasPractica {
+    padding: 1rem;
+  }
+  .areasPractica .capractica-right, .areasPractica .capractica-left {
+    padding: 0rem;
+    padding-top: 3rem;
+    width: 20rem;
+  }
+  .areasPractica .imgareas {
+    padding: 1rem;
+    width: 20rem;
   }
 }
 
