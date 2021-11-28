@@ -9,7 +9,28 @@
   height: 10rem;
 }
 
-/*------- Estilo Carrusel*/
+@media (max-width: 768px) {
+  .logo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .logo {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/*------- Estilo Carrusel e inicio en genenral*/
 .contenedorCarrusel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,23 +52,25 @@
   background-color: black;
 }
 
-.contenedorCarrusel .empresa {
+.botonSaber, .botonContacto {
+  text-decoration: none;
+  color: black;
+}
+
+.empresa {
   width: 40rem;
   height: 40rem;
   padding: 5rem;
   padding-top: 10rem;
+  text-align: justify;
 }
 
-.contenedorCarrusel .empresa .tituloAbogados {
+.empresa .tituloAbogados {
   padding-bottom: 2rem;
 }
 
-.contenedorCarrusel .parrafoAbogados {
-  text-align: justify;
-}
-
-.lead {
-  text-align: justify;
+.parrafoAbogados, .lead {
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -126,7 +149,215 @@
   }
 }
 
-/******* ESTILOS FOOTER*/
+/*--------------------------ESTILOS AREAS DE PRACTICA*/
+.areasPractica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.areasPractica .capractica-right, .areasPractica .capractica-left {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  text-align: justify;
+  width: 60rem;
+  -webkit-box-shadow: 10px 5px 5px #98a3a3;
+          box-shadow: 10px 5px 5px #98a3a3;
+}
+
+.areasPractica .capractica-right .acordion-body, .areasPractica .capractica-left .acordion-body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.areasPractica .imgareas {
+  padding-right: 2rem;
+  padding-top: 5rem;
+}
+
+.tituloAP {
+  padding: 3rem;
+  color: #1a6d7c;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .areasPractica {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .areasPractica .capractica-right, .areasPractica .capractica-left {
+    padding: 0px;
+    width: 1rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .areasPractica .imgareas {
+    padding: 2rem;
+  }
+}
+
+.tituloAP {
+  padding: 3rem;
+  color: #1a6d7c;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .areasPractica {
+    padding: 2rem;
+  }
+  .areasPractica .capractica-right, .areasPractica .capractica-left {
+    padding: 0rem;
+    padding-top: 3rem;
+    width: 30rem;
+  }
+  .areasPractica .imgareas {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .areasPractica {
+    padding: 1rem;
+  }
+  .areasPractica .capractica-right, .areasPractica .capractica-left {
+    padding: 0rem;
+    padding-top: 3rem;
+    width: 20rem;
+  }
+  .areasPractica .imgareas {
+    padding: 1rem;
+    width: 20rem;
+  }
+}
+
+/*---------------------ESTILO SOCIOS----*/
+.sociosFundadores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem;
+}
+
+.sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19rem;
+  height: 26rem;
+  border-radius: 1rem;
+}
+
+.sociosFundadores .imgSocioM {
+  background-image: url(./img/letram.jpeg);
+}
+
+.sociosFundadores .imgSocioM:hover {
+  background-image: url(./img/franco.jpeg);
+}
+
+.sociosFundadores .imgSocioRK {
+  background-image: url(./img/letrark.jpeg);
+}
+
+.sociosFundadores .imgSocioRK:hover {
+  background-image: url(./img/nicolas.jpeg);
+}
+
+.sociosFundadores .imgSocioG {
+  background-image: url(./img/letrag.jpeg);
+}
+
+.sociosFundadores .imgSocioG:hover {
+  background-image: url(./img/maximo.jpeg);
+}
+
+@media (max-width: 768px) {
+  .sociosFundadores {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM {
+    width: 13rem;
+    height: 19rem;
+  }
+  .sociosFundadores .nombreSocio, .sociosFundadores .founding {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sociosFundadores {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM {
+    width: 9rem;
+    height: 15rem;
+  }
+  .sociosFundadores .nombreSocio, .sociosFundadores .founding {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .sociosFundadores {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM {
+    width: 8rem;
+    height: 13rem;
+  }
+  .sociosFundadores .nombreSocio, .sociosFundadores .founding {
+    font-size: 1rem;
+  }
+}
+
+/*--------------------------ESTILOS PAGINA CONTACTO*/
+.contacto {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.contacto:hover {
+  border-radius: 2rem;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+/*---------------------------ESTILOS FOOTER*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,159 +457,6 @@
 
 @media (max-width: 768px) {
   .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-/*--------------------------ESTILOS PAGINA CONTACTO*/
-.contacto {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
-}
-
-.contacto:hover {
-  border-radius: 2rem;
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8);
-}
-
-/*--------------------------ESTILOS AREAS DE PRACTICA*/
-.areasPractica {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.areasPractica .capractica-right, .areasPractica .capractica-left {
-  padding-top: 5rem;
-  padding-left: 5rem;
-  text-align: justify;
-  width: 60rem;
-  -webkit-box-shadow: 10px 5px 5px #98a3a3;
-          box-shadow: 10px 5px 5px #98a3a3;
-}
-
-.areasPractica .imgareas {
-  padding-right: 2rem;
-  padding-top: 5rem;
-}
-
-.tituloAP {
-  padding: 3rem;
-  color: #1a6d7c;
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .areasPractica {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .areasPractica .capractica-right, .areasPractica .capractica-left {
-    padding: 0px;
-    width: 1rem;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .areasPractica .imgareas {
-    padding: 0px;
-  }
-}
-
-.tituloAP {
-  padding: 3rem;
-  color: #1a6d7c;
-  text-decoration: underline;
-}
-
-@media (max-width: 992px) {
-  .areasPractica {
-    padding: 2rem;
-  }
-  .areasPractica .capractica-right, .areasPractica .capractica-left {
-    padding: 0rem;
-    padding-top: 3rem;
-    width: 30rem;
-  }
-  .areasPractica .imgareas {
-    padding: 0px;
-  }
-}
-
-@media (max-width: 415px) {
-  .areasPractica {
-    padding: 1rem;
-  }
-  .areasPractica .capractica-right, .areasPractica .capractica-left {
-    padding: 0rem;
-    padding-top: 3rem;
-    width: 20rem;
-  }
-  .areasPractica .imgareas {
-    padding: 1rem;
-    width: 20rem;
-  }
-}
-
-/*---------------------ESTILO SOCIOS----*/
-.sociosFundadores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5rem;
-}
-
-.sociosFundadores .imgSocioRK, .sociosFundadores .imgSocioG, .sociosFundadores .imgSocioM, .sociosFundadores .noVisible {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 20rem;
-}
-
-.sociosFundadores .imgSocioRK {
-  background-image: url(./img/nicolas.jpeg);
-}
-
-.sociosFundadores .imgSocioM {
-  background-image: url(./img/franco.jpeg);
-}
-
-.sociosFundadores .imgSocioG {
-  background-image: url(./img/maximo.jpeg);
-}
-
-@media (max-width: 768px) {
-  .sociosFundadores {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

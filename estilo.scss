@@ -3,11 +3,128 @@
     padding: 0;
 }
 
-@import "index";
-@import "footer";
-@import "contacto";
-@import "practicas";
-@import "socios";
+
+/*-------------Estilo LOGO*/
+.logo{
+    width: 10rem;
+    height: 10rem;
+}
+@media (max-width: 768px){
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+}
+@media (max-width: 1024px){
+.logo{
+    width: 7rem;
+    height: 7rem;
+}
+}
+
+@media(max-width: 415px){
+    .logo{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+/*------- Estilo Carrusel e inicio en genenral*/
+.contenedorCarrusel{
+    display: flex;
+    flex-direction: row;
+#carouselExampleCaptions{
+    width: 40rem;
+    height: 40rem;
+    margin: 5rem;
+
+    .boton{
+        color: black;
+        background-color: black;
+    }
+}
+}
+.botonSaber, .botonContacto{
+    text-decoration: none;
+    color: black;
+}
+
+.empresa{
+    .tituloAbogados{
+        padding-bottom: 2rem;
+    }
+    width: 40rem;
+    height: 40rem;
+    padding: 5rem;
+    padding-top: 10rem;
+    text-align: justify;
+}
+.parrafoAbogados, .lead{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media (max-width: 768px){
+    .contenedorCarrusel{
+        flex-direction: column;
+    #carouselExampleCaptions{
+        width: 25rem;
+        height: 25rem;
+        margin: 2rem;
+    }
+    .empresa{
+        .tituloAbogados{
+            padding-bottom: 2rem;
+        }
+        width: 25rem;
+        height: 45rem;
+        padding: 2rem;
+        padding-top: 2rem;
+    }
+    }
+}
+    
+@media(max-width: 992px){
+    .contenedorCarrusel{
+        flex-direction: column;
+    #carouselExampleCaptions{
+        width: 40rem;
+        height: 40rem;
+        margin: 5rem;
+    }
+    .empresa{
+        .tituloAbogados{
+            padding-bottom: 2rem;
+        }
+        width: 40rem;
+        height: 35rem;
+        padding: 3rem;
+        padding-top: 3rem;
+    }
+    }
+}
+@media(max-width: 415px)
+{
+    .contenedorCarrusel
+    {
+        flex-direction: column;
+    #carouselExampleCaptions{
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .empresa{
+        .tituloAbogados{
+            padding-bottom: 2rem;
+        }
+        width: fit-content;
+        height: fit-content;
+        padding: 1rem;
+        padding-top: 1rem;
+    }
+}
+}
+
+
 /*--------------------------ESTILOS AREAS DE PRACTICA*/
 .areasPractica{
     display: flex;
@@ -45,7 +162,6 @@
     }
     .imgareas{
         padding:2rem;
-        padding-left: 2rem;
     }
     }
 }
@@ -66,7 +182,7 @@
         
     }
     .imgareas{
-        padding:0px;
+        padding-top: 2rem;
     }
     }
 }
@@ -83,4 +199,170 @@
         width: 20rem;
     }
     } 
+}
+/*---------------------ESTILO SOCIOS----*/
+
+
+.sociosFundadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem;
+
+.imgSocioRK, .imgSocioG, .imgSocioM{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 19rem;
+    height: 26rem;
+    border-radius: 1rem;
+
+}
+.imgSocioM{
+    background-image: url(./img/letram.jpeg);
+}
+.imgSocioM:hover{
+    background-image: url(./img/franco.jpeg);
+}
+.imgSocioRK{
+    background-image: url(./img/letrark.jpeg);
+}
+.imgSocioRK:hover{
+    background-image: url(./img/nicolas.jpeg);
+}
+.imgSocioG{
+    background-image: url(./img/letrag.jpeg);
+}
+.imgSocioG:hover{
+    background-image: url(./img/maximo.jpeg);
+}
+}
+@media (max-width: 768px){
+    .sociosFundadores{
+    flex-direction: column;
+    .imgSocioRK, .imgSocioG, .imgSocioM{
+        width: 13rem;
+        height: 19rem;
+    }
+    .nombreSocio, .founding{
+        font-size: 1rem;
+    }
+}
+}
+@media (max-width: 1024px){
+    .sociosFundadores{
+    flex-direction: row;
+    .imgSocioRK, .imgSocioG, .imgSocioM{
+        width: 9rem;
+        height: 15rem;
+    }
+    .nombreSocio, .founding{
+        font-size: 1.5rem;
+    }
+}
+}
+
+@media(max-width: 415px){
+    .sociosFundadores{
+        flex-direction: column;
+        .imgSocioRK, .imgSocioG, .imgSocioM{
+            width: 8rem;
+            height: 13rem;
+        }
+        .nombreSocio, .founding{
+            font-size: 1rem;
+        }
+    }
+}
+/*--------------------------ESTILOS PAGINA CONTACTO*/
+
+.contacto{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+}
+.contacto:hover{
+    border-radius: 2rem;
+    transform: scale(1.8);
+}
+/*---------------------------ESTILOS FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top, rgb(19, 87, 87), white);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: stretch;
+    padding-top: 2rem;
+
+}
+    .cajaContacto, .cajaSede, .cajaMapa{
+        padding: 2rem;
+    }
+
+
+.contactoInicio, .sede{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+
+}
+.linkedin{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+
+}
+.linkedin:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.instagram{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.instagram:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.facebook{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.facebook:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.twitter{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.twitter:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px){
+    .footer{
+    flex-direction: column;
+}
 }
