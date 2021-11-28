@@ -9,7 +9,9 @@
     text-align: justify;
     width: 60rem;
     box-shadow: 10px 5px 5px rgb(152, 163, 163);
-    
+    .acordion-body{
+        font-family: 'Roboto', sans-serif;;
+    }
 }
 .imgareas{
     padding-right: 2rem;
@@ -32,7 +34,7 @@
         height: fit-content;        
     }
     .imgareas{
-        padding:0px;
+        padding:2rem;
     }
     }
 }
