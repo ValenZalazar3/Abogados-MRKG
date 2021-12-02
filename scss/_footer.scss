@@ -1,0 +1,78 @@
+/*---------------------------ESTILOS FOOTER*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top, rgb(19, 87, 87), white);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: stretch;
+    padding-top: 2rem;
+
+}
+    .cajaContacto, .cajaSede, .cajaMapa{
+        padding: 2rem;
+    }
+
+
+.contactoInicio, .sede{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+
+}
+.linkedin{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+
+}
+.linkedin:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.instagram{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.instagram:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.facebook{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.facebook:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+.twitter{
+    height: 20px;
+    width: 20px;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+.twitter:hover{
+    border-radius: 2rem;
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px){
+    .footer{
+    flex-direction: column;
+}
+}

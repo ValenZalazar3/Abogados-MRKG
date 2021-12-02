@@ -1,0 +1,74 @@
+/*---------------------ESTILO SOCIOS----*/
+
+
+.sociosFundadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem;
+
+.imgSocioRK, .imgSocioG, .imgSocioM{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 19rem;
+    height: 26rem;
+    border-radius: 1rem;
+
+}
+.imgSocioM{
+    background-image: url(./img/letram.jpeg);
+}
+.imgSocioM:hover{
+    background-image: url(./img/franco.jpeg);
+}
+.imgSocioRK{
+    background-image: url(./img/letrark.jpeg);
+}
+.imgSocioRK:hover{
+    background-image: url(./img/nicolas.jpeg);
+}
+.imgSocioG{
+    background-image: url(./img/letrag.jpeg);
+}
+.imgSocioG:hover{
+    background-image: url(./img/maximo.jpeg);
+}
+}
+@media (max-width: 768px){
+    .sociosFundadores{
+    flex-direction: column;
+    .imgSocioRK, .imgSocioG, .imgSocioM{
+        width: 13rem;
+        height: 19rem;
+    }
+    .nombreSocio, .founding{
+        font-size: 1rem;
+    }
+}
+}
+@media (max-width: 1024px){
+    .sociosFundadores{
+    flex-direction: row;
+    .imgSocioRK, .imgSocioG, .imgSocioM{
+        width: 9rem;
+        height: 15rem;
+    }
+    .nombreSocio, .founding{
+        font-size: 1.5rem;
+    }
+}
+}
+
+@media(max-width: 415px){
+    .sociosFundadores{
+        flex-direction: column;
+        .imgSocioRK, .imgSocioG, .imgSocioM{
+            width: 8rem;
+            height: 13rem;
+        }
+        .nombreSocio, .founding{
+            font-size: 1rem;
+        }
+    }
+}
